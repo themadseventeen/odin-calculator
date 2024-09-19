@@ -1,0 +1,83 @@
+@font-face {
+    font-family: "7seg";
+    src: URL("./fonts/DSEG7Classic-Regular.ttf") format("truetype");
+}
+
+/* div {
+    border: 2px solid red;
+} */
+
+body {
+    margin: 0px;
+    font-family: "Inter", sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    background-color: #808080;
+}
+
+.display {
+    padding: 4px;
+    margin: 8px;
+    font-size: 64px;
+    text-align: right;
+    font-family: "7seg";
+
+    background-color: #d5d5d5;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    height: 100%;
+}
+
+.row {
+    display: flex;
+    box-sizing: border-box;
+}
+
+.button-container {
+    padding: 4px;
+    display: flex;
+    box-sizing: border-box;
+}
+
+.button-container.regular {
+    flex: 1 1 25%;
+    width: 100px;
+}
+
+.button-container.double {
+    flex: 2 1 50%; 
+    width: 200px;
+}
+
+.keypad button {
+    font-size: 36px;
+    flex: auto;
+    height: 100px;
+    border: none;
+}
+
+button.blue {
+    background-color: #6464f8;
+}
+
+button.green {
+    background-color: #7dff63;
+}
+
+button.orange {
+    background-color: #ff9239;
+}
